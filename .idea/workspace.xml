@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d0502ad-ced4-4711-b5a0-f691b99bc37b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dir.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/email/PHPMailerAutoload.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/email/class.phpmailer.php" afterPath="" />
@@ -458,37 +457,17 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="sortTest.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/sortClass/sortTest.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="450">
-                    <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="php" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Sort.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sortClass/Sort.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/work16_8_8/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="214">
-              <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+            <state relative-caret-position="461">
+              <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
               <folding>
                 <element signature="e#6#83#0#PHP" expanded="true" />
               </folding>
@@ -521,6 +500,7 @@
         <option value="$PROJECT_DIR$/sortClass/sortTest2.php" />
         <option value="$PROJECT_DIR$/sortClass/Sort.php" />
         <option value="$PROJECT_DIR$/sortClass/sortTest.php" />
+        <option value="$PROJECT_DIR$/work16_8_8/test.php" />
       </list>
     </option>
   </component>
@@ -534,10 +514,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="451" />
-    <option name="y" value="115" />
-    <option name="width" value="1313" />
-    <option name="height" value="803" />
+    <option name="x" value="818" />
+    <option name="y" value="22" />
+    <option name="width" value="1162" />
+    <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -564,6 +544,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -571,6 +552,20 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="php" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="php" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="work16_8_8" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -603,21 +598,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="com.maddyhome.idea.vim.ui.VimEmulationConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../filter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../remember" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\mysite\php\sortClass" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.sortTest.php">
+  <component name="RunManager" selected="JavaScript Debug.test.php">
     <configuration default="false" name="sortTest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sortClass/sortTest.php">
       <method />
     </configuration>
@@ -627,10 +621,10 @@
     <configuration default="false" name="sortTest1.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/sortClass/sortTest1.html">
       <method />
     </configuration>
-    <configuration default="false" name="sortTest.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/sortClass/sortTest.php">
+    <configuration default="false" name="t.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/sortClass/t.php">
       <method />
     </configuration>
-    <configuration default="false" name="t.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/sortClass/t.php">
+    <configuration default="false" name="test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/work16_8_8/test.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -667,16 +661,16 @@
       <item index="0" class="java.lang.String" itemvalue="PHP Script.sortTest.php" />
       <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
       <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
-        <item index="4" class="java.lang.String" itemvalue="PHP Script.sortTest.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
       </list>
     </recent_temporary>
   </component>
@@ -703,18 +697,19 @@
       <workItem from="1470369172186" duration="5320000" />
       <workItem from="1470380796922" duration="234000" />
       <workItem from="1470381047781" duration="310000" />
-      <workItem from="1470381431064" duration="8164000" />
+      <workItem from="1470381431064" duration="8599000" />
+      <workItem from="1470624462496" duration="21558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19001000" />
+    <option name="totallyTimeSpent" value="40994000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="451" y="115" width="1313" height="803" extended-state="1" />
+    <frame x="818" y="22" width="1162" height="979" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1380108" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15619546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -723,7 +718,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.021377672" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -749,7 +744,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dir.php" />
     <entry file="file://$PROJECT_DIR$/../mysite.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
@@ -904,42 +898,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dir.php" />
     <entry file="file://$PROJECT_DIR$/phpqrcode.php" />
-    <entry file="file://$PROJECT_DIR$/sortClass/sortTest1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortClass/t.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortClass/sortes22.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-225">
-          <caret line="42" column="15" selection-start-line="42" selection-start-column="15" selection-end-line="42" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortClass/Sort1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="160" column="5" selection-start-line="160" selection-start-column="5" selection-end-line="160" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sortClass/sortTest1.html" />
+    <entry file="file://$PROJECT_DIR$/sortClass/t.php" />
+    <entry file="file://$PROJECT_DIR$/sortClass/sortes22.php" />
+    <entry file="file://$PROJECT_DIR$/sortClass/Sort1.php" />
     <entry file="file://$PROJECT_DIR$/sortClass/Sort.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-          <folding />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -947,14 +916,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sortClass/sortTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -977,8 +938,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sortClass/Sort.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
+        <state relative-caret-position="1050">
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#83#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sortClass/sortTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work16_8_8/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="461">
+          <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
           <folding>
             <element signature="e#6#83#0#PHP" expanded="true" />
           </folding>
