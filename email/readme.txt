@@ -1,1 +1,0 @@
-使用的是QQ邮箱，需要在WampServer开启openssl

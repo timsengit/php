@@ -441,6 +441,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/phpqrcodeimg/qrcode_.png" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/showsort.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/sortes.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/work16_8_8/test.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="php.iws" />
@@ -462,20 +463,7 @@
     <favorites_list name="php" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/work16_8_8/test.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
-              <folding>
-                <element signature="e#6#83#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
@@ -501,6 +489,8 @@
         <option value="$PROJECT_DIR$/sortClass/Sort.php" />
         <option value="$PROJECT_DIR$/sortClass/sortTest.php" />
         <option value="$PROJECT_DIR$/work16_8_8/test.php" />
+        <option value="$PROJECT_DIR$/work16_8_8/tester.php" />
+        <option value="$PROJECT_DIR$/work16_8_8/Work.php" />
       </list>
     </option>
   </component>
@@ -514,9 +504,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="818" />
-    <option name="y" value="22" />
-    <option name="width" value="1162" />
+    <option name="x" value="308" />
+    <option name="y" value="72" />
+    <option name="width" value="898" />
     <option name="height" value="979" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -544,8 +534,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -598,6 +586,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -611,10 +601,7 @@
       <recent name="E:\mysite\php\sortClass" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.test.php">
-    <configuration default="false" name="sortTest.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/sortClass/sortTest.php">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.tester.php">
     <configuration default="false" name="sortTest.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/sortClass/sortTest.php">
       <method />
     </configuration>
@@ -625,6 +612,9 @@
       <method />
     </configuration>
     <configuration default="false" name="test.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/work16_8_8/test.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="tester.php" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/php/work16_8_8/tester.php">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -658,19 +648,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="PHP Script.sortTest.php" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.tester.php" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.tester.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.test.php" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.sortTest.php" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.t.php" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.sortTest1.html" />
       </list>
     </recent_temporary>
   </component>
@@ -698,18 +688,20 @@
       <workItem from="1470380796922" duration="234000" />
       <workItem from="1470381047781" duration="310000" />
       <workItem from="1470381431064" duration="8599000" />
-      <workItem from="1470624462496" duration="21558000" />
+      <workItem from="1470624462496" duration="22095000" />
+      <workItem from="1470664723339" duration="34000" />
+      <workItem from="1470706505333" duration="11231000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40994000" />
+    <option name="totallyTimeSpent" value="52796000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="818" y="22" width="1162" height="979" extended-state="0" />
-    <editor active="true" />
+    <frame x="308" y="72" width="898" height="979" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15619546" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20294784" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -744,20 +736,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../mysite.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../site.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -906,9 +884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1650">
           <caret line="75" column="10" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -916,7 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="30" column="26" selection-start-line="30" selection-start-column="26" selection-end-line="30" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2042">
           <caret line="120" column="29" selection-start-line="120" selection-start-column="29" selection-end-line="120" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,9 +912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="48" column="5" selection-start-line="48" selection-start-column="5" selection-end-line="48" selection-end-column="5" />
-          <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -954,13 +923,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/work16_8_8/tester.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/work16_8_8/Work.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="729">
+          <caret line="215" column="26" selection-start-line="215" selection-start-column="26" selection-end-line="215" selection-end-column="26" />
+          <folding>
+            <marker date="1470720648020" expanded="true" signature="1664:1677" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="1824:1837" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="1984:1997" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="2144:2160" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="2304:2320" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="2464:2480" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="2624:2640" placeholder="..." />
+            <marker date="1470720648020" expanded="true" signature="2784:6587" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/work16_8_8/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="199" column="17" selection-start-line="199" selection-start-column="17" selection-end-line="199" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#83#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="547">
+          <caret line="203" column="5" selection-start-line="203" selection-start-column="5" selection-end-line="203" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
