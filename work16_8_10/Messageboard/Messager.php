@@ -26,11 +26,14 @@ class Messager
     public function saveMessage($name, $content)
     {
         $date = date("Y-m-d H:i:s"); //文件保存日期
+        if ($name != '') {
+            //打开文件
 
-        //打开文件
-        $fh = fopen("./file/messages.txt", "a+");
-        fwrite($fh, "$date" . "     " . "$name   " . "$content" . "\r\n");
-        fclose($fh);
+            $fh = fopen("./file/messages.txt", "a+");
+
+            fwrite($fh, "$date" . "     " . "$name   " . "$content" . "\r\n");
+            fclose($fh);
+        }
 
     }
 }
