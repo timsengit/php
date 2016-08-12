@@ -31,7 +31,7 @@ class Messager
 
             $fh = fopen("./file/messages.txt", "a+");
 
-            fwrite($fh, "$date" . "     " . "$name   " . "$content" . "\r\n");
+            fwrite($fh, "$date" . " \r\n    " . "$name   " . "$content" . "\r\n");
             fclose($fh);
         }
 
