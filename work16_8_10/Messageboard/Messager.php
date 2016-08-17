@@ -6,7 +6,7 @@
  * Time: 17:27
  */
 
-namespace Ycf\Lession\MessageBoard;
+namespace JinLing\MessageBoard;
 
 class Messager
 {
@@ -15,7 +15,7 @@ class Messager
     {
         $strShow = "";
 //读取文件
-        $handle = fopen("./file/messages.txt", "r+");
+        $handle = fopen("./messages.txt", "r+");
         while (!feof($handle)) {
             $content = fgets($handle);
             $strShow = $strShow . $content . "<br>";
