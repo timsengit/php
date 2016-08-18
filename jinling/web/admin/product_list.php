@@ -8,10 +8,14 @@
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
+<?php include "./connecter/PDOX.php";
+include "./connecter/DBConfig.php";
+$pdo = new PDOX($DSN, $USER, $PASS);
+?>
 <div class="container">
-    <h3 class="marginbot">最新公告<a href="news_edit.html" class="sgbtn">添加新产品</a></h3>
+    <h3 class="marginbot">最新公告<a href="product_edit.php" class="sgbtn">添加新产品</a></h3>
     <div class="mainbox">
-        <form action="" method="post">
+        <form action="deleteProduct.php" method="post">
             <table class="datalist fixwidth">
                 <tbody>
                     <tr>
@@ -22,30 +26,19 @@
                         <th nowrap="nowrap">添加时间</th>
                         <th nowrap="nowrap">详情</th>
                     </tr>
+                    <?php foreach ($pdo->query('SELECT * from product') as $row) {
+    ;?>
                     <tr>
-                        <td width="80"><input name="" value="" class="checkbox" type="checkbox"></td>
-                        <td width="200"><strong>祝贺公司网站正式上线！</strong></td>
-						<td width="100"><img src="images/prod1.gif"></td>
-                        <td width="100">admin</td>
-                        <td width="150">2009-07-01 12:05</td>
+                        <td width="80"><input name="productid[]" value=<?php echo $row['id']; ?> class="checkbox" type="checkbox"></td>
+                        <td width="200"><strong><?php echo $row['name']; ?></strong></td>
+						<td width="100"><img src=<?php echo $row['pathOfPic']; ?>></td>
+                        <td width="100"><?php echo $row['adder']; ?></td>
+                        <td width="150"><?php echo $row['addTime']; ?></td>
                         <td width="100"><a href="">编辑</a></td>
                     </tr>
-                    <tr>
-                        <td width="80"><input name="" value="" class="checkbox" type="checkbox"></td>
-                        <td width="200"><strong>祝贺公司网站正式上线！</strong></td>
-						<td width="100"><img src="images/prod1.gif"></td>
-                        <td width="100">admin</td>
-                        <td width="150">2009-07-01 12:05</td>
-                        <td width="100"><a href="">编辑</a></td>
-                    </tr>
-                    <tr>
-                        <td width="80"><input name="" value="" class="checkbox" type="checkbox"></td>
-                        <td width="200"><strong>祝贺公司网站正式上线！</strong></td>
-						<td width="100"><img src="images/prod1.gif"></td>
-                        <td width="100">admin</td>
-                        <td width="150">2009-07-01 12:05</td>
-                        <td width="100"><a href="">编辑</a></td>
-                    </tr>
+                    <?php }
+;?>
+
                     <tr class="nobg">
                     	<td ><input value="提 交" class="btn" type="submit"></td>
                         <td class="tdpage" colspan="4">
@@ -60,7 +53,7 @@
                             <kbd><input type="text" name="custompage" size="3" onkeydown="if(event.keyCode==13) {window.location='?page='+this.value; return false;}" /></kbd>
                             </div>
                       	</td>
-                    </tr>                
+                    </tr>
                 </tbody>
         	</table>
         <div class="margintop"></div>
