@@ -7,9 +7,9 @@
 </head>
 <body>
 <div class="container">
-    <h3 class="marginbot">添加新文章<a href="news_list.php" class="sgbtn">返回产品列表</a></h3>
+    <h3 class="marginbot">添加新产品<a href="news_list.php" class="sgbtn">返回产品列表</a></h3>
     <div class="mainbox">
-        <form action="saveProduct.php" method="post">
+        <form action="saveProduct.php" method="post" enctype="multipart/form-data">
             <table class="opt" style="width:600px;">
                 <tbody>
                     <tr>
@@ -17,18 +17,22 @@
                     </tr>
                     <tr>
                         <td>
-                        <input name="title" class="txt" style="width:400px;" type="text">
+                        <input name="name" class="txt" style="width:400px;" type="text">
                         </td>
                     </tr>
                     <tr>
                         <th>产品描述：</th>
                     </tr>
                     <tr>
-                        <td><textarea style="width:400px; height:150px" name="content"></textarea></td>
+                        <td><textarea style="width:400px; height:150px" name="description"></textarea></td>
                     </tr>
                 </tbody>
             </table>
-            <div class="opt"><input name="submit" value=" 提 交 " class="btn" tabindex="3" type="submit"></div>
+                        <label for="file">产品图片上传:</label>
+                        <br/>
+                        <input type="file" name="file[]"id="file" multiple="multiple" />
+                        <br/>
+            <div class="opt"><input name="submit" value=" 提 交 。。。" class="btn" tabindex="3" type="submit"></div>
         </form>
     </div>
 </div>
