@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-		<form id="loginform" method="post" action="">
+		<form id="loginform" method="post" action="identity.php">
         <table class="mainbox">
             <tbody>
                 <tr>
@@ -34,7 +34,7 @@
                             <td><input type="submit" tabindex="4" class="btn" value="登 录" name="submit"/></td>
                         </tr>
                     </table>
-                    
+
                     </td>
                 </tr>
             </tbody>

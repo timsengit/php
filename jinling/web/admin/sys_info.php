@@ -2,26 +2,31 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><?php echo $page_title;?></title>
+<title><?php echo $page_title; ?></title>
 <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
 <script type="text/javascript" language="javascript" src="js/jquery.js"></script>
 <script type="text/javascript" language="javascript" src="js/common.js"></script>
 </head>
 <body>
+<?php
+include "./connecter/PDOX.php";
+include "./connecter/DBConfig.php";
+$pdo = new PDOX($DSN, $USER, $PASS);
+?>
 <div class="container">
 	<h3>统计信息</h3>
 	<ul class="memlist fixwidth">
-		<li><em><a href="products.html">产品总数</a>:</em><?php echo $p_total;?></li>
-		<li><em><a href="knowledge.html">文章总数</a>:</em>100</li>
-		<li><em><a href="guestbook.html">留言总数</a>:</em>100</li>
+		<li><em><a href="products.html">产品总数</a>:</em><?php echo $pdo->getcount("product"); ?></li>
+		<li><em><a href="knowledge.html">文章总数</a>:</em><?php echo $pdo->getcount("news"); ?></li>
+		<li><em><a href="guestbook.html">留言总数</a>:</em><?php echo $pdo->getcount("messages"); ?></li>
 	</ul>
-	
+
 	<h3>系统信息</h3>
 	<ul class="memlist fixwidth">
-    	<li><em>主机名:</em></li> 
+    	<li><em>主机名:</em></li>
 		<li><em>操作系统</em></li>
 		<li><em>服务器软件:</em></li>
-		<li><em>数据库平台:</em></li>	
+		<li><em>数据库平台:</em></li>
 	</ul>
 	<h3>版权信息</h3>
 	<ul class="memlist fixwidth">
