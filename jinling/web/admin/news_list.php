@@ -15,7 +15,7 @@ $pdo = new PDOX($DSN, $USER, $PASS);
 <div class="container">
     <h3 class="marginbot">最新公告<a href="news_edit.php" class="sgbtn">添加新文章</a></h3>
     <div class="mainbox">
-        <form action="" method="post">
+        <form action="deleteNews.php" method="post">
             <table class="datalist fixwidth">
                 <tbody>
                     <tr>
@@ -28,7 +28,7 @@ $pdo = new PDOX($DSN, $USER, $PASS);
                     <?php foreach ($pdo->query('SELECT * from news') as $row) {
     ;?>
                     <tr>
-                        <td width="80"><input name="" value="" class="checkbox" type="checkbox"></td>
+                        <td width="80"><input name="newsid[]" value=<?php echo $row['id']; ?> class="checkbox" type="checkbox"></td>
                         <td><strong><?php echo $row['name']; ?></strong></td>
                         <td width="100"><?php echo $row['adder']; ?></td>
                         <td width="150"><?php echo $row['addTime']; ?></td>

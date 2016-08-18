@@ -18,3 +18,4 @@ $addTime = date('Ymd');
 echo $name . $news . $adder . $addTime;
 $arr = array('name' => $name, 'news' => $news, 'adder' => $adder, 'addTime' => $addTime);
 $pdo->insert('news', $arr);
+header('Location:news_list.php');
