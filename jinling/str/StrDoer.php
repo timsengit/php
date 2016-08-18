@@ -81,9 +81,8 @@ class StrDoer
     public function six($str)
     {
         $str1 = '';
-        $str1 = substr($str, 0, 60) . "...";
+        //一个中文字符为3
+        $str1 = substr($str, 0, 39) . "...";
         return $str1;
     }
 }
-echo substr("sssssssssssssssssssssssssssssssssssssssssssssss", 0, 12);
-echo ubstr("sssssssssssssssssssssssssssssssssssssssssssssss", 0, 12);

@@ -7,39 +7,25 @@
 </head>
 
 <body>
-<div class="header">
-	<h1 class="logo" title="金陵贸易有限公司"><a href="index.html"><img src="images/logo.gif" alt="金陵贸易有限公司" /></a></h1>
-    <p class="top_r"><a href="#" class="btn_i">设为主页</a><a href="#" class="btn_f">收藏本站</a></p>
-</div>
-<div class="nav">
-	<div class="nav_left"></div>
-    <ul>
-     	<li class="sel"><a href="index..">首  页</a></li>
-        <li><a href="about_us.html">公司简介</a></li>
-        <li><a href="product_list..">产品展示</a></li>
-        <li><a href="info.html">行业资讯</a></li>
-        <li><a href="guestbook.html">客户留言</a></li>
-        <li><a href="contact_us.html" class="nobg">联系我们</a></li>
-     </ul>
-     <div class="time"><?php echo date('Y-m-d'); ?></div>
-    <div class="nav_right"></div>
-</div>
-<div class="banner">
-	<a href="#"><img src="images/banner.jpg" align="banner" /></a>
-</div>
-<?php $sss = "sdfsdf";?>
+<?php include "top.html";
+//导入顶部页面?>
+<?php include "../db/connecter/PDOX.php";
+include "../db/DBConfig.php";
+$pdo = new PDOX($DSN, $USER, $PASS);
+//echo "sss";
+?>
 <div class="content">
 	<div class="w475_l">
     	<div class="title">
         	<h2 class="cBlue fB">公司简介<b class="cGrey fn">About us</b></h2>
         </div>
         <div class="intro">
-<?php echo $sss; ?>
-        		产品展示产品展示产品展示产品展示产品展示产品展示产品展示产品展示
-				产品展示产品展示产品展示产品展示产品展示产品展示产品展示产品展示
-				产品展示产品展示产品展示产品展示产品展示产品展示产品展示产品展示
-				产品展示产品展示产品展示产品展示产品展示产品展示产品展示产品展示
-                <a href="#" class="cBlue"> 查看更多...</a>
+<?php
+foreach ($pdo->query('SELECT * from aboutus') as $row) {
+    echo $row['article'];}
+?>
+
+                <a href="about_us.html" class="cBlue"> 查看更多...</a>
                 <div class="hackbox"></div>
         </div>
         <div class="blank10"></div>
@@ -47,27 +33,16 @@
         	<h2 class="cBlue fB">产品展示<b class="cGrey fn">Products</b></h2><span class="more"><a href="product_list.html" class="cBlue"> 更多...</a></span>
         </div>
         <ul class="list_l">
-
+<?php foreach ($pdo->query('SELECT * from product') as $row) {
+    ;?>
         	<li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href="product_info.html"><img src="images/prod1.gif" alt="222222" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo $row['pathOfPic']; ?> alt="222222" /></a>
                 </span>
-                <span class="listtxt"><a href="product_info.html">产品1</a></span>
+                <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
             </li>
-			<li>
-                <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href="product_info.html"><img src="images/prod2.gif" alt="222222" /></a>
-                </span>
-                <span class="listtxt"><a href="product_info.html">产品2</a></span>
-            </li>
-			<li>
-                <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href="product_info.html"><img src="images/prod3.gif" alt="222222" /></a>
-                </span>
-                <span class="listtxt"><a href="product_info.html">产品3</a></span>
-            </li>
-
-
+            <?php }
+;?>
         </ul>
     </div>
     <div class="w370_r">
@@ -75,23 +50,14 @@
         	<h2 class="cBlue fB">最新公告<b class="cGrey fn">News</b></h2>
         </div>
         <ul class="list_r">
-
+            <?php foreach ($pdo->query('SELECT * from news') as $row) {
+    ;?>
             <li>
-			<a title="新闻1新闻1新闻1" href="article.html">新闻1新yyy闻1新闻1新闻1新闻1新闻1</a>
-			<span class="time1">2016-08-10 13:20:12</span>
+			<a title=<?php echo $row['name']; ?> href=<?php echo "article.php?id=" . $row['id']; ?>><?php echo $row['news']; ?></a>
+			<span class="time1"><?php echo $row['addTime']; ?></span>
 			</li>
-			 <li>
-			<a title="新闻2新闻2新闻2" href="article.html">新闻2新闻2新闻2新闻2新闻2新闻2</a>
-			<span class="time1">2016-08-10 13:20:12</span>
-			</li>
-			 <li>
-			<a title="新闻1新闻1新闻1" href="article.html">新闻1新闻1新闻1新闻1新闻1新闻1</a>
-			<span class="time1">2016-08-10 13:20:12</span>
-			</li>
-			 <li>
-			<a title="新闻1新闻1新闻1" href="article.html">新闻1新闻1新闻1新闻1新闻1新闻1</a>
-			<span class="time1">2016-08-10 13:20:12</span>
-			</li>
+            <?php }
+;?>
 
         </ul>
         <div class="blank29"></div>
@@ -99,15 +65,17 @@
         	<h2 class="cBlue fB">行业资讯<b class="cGrey fn">Information</b></h2><span class="more"><a href="info.html" class="cBlue"> 更多...</a></span>
         </div>
         <ul class="list_r">
+            <?php
+include "../str/StrDoer.php";
+$StrDo = new \Str\StrDoer();
+foreach ($pdo->query('SELECT * from info') as $row) {
+    ;?>
 
-            <li><a title="行业资讯行业资讯行业资讯" href="article.html">行业资讯行业资讯行业资讯</a>
-			<span class="time1">2016-08-10 13:20:12</span></li>
-			 <li><a title="行业资讯行业资讯行业资讯" href="article.html">行业资讯行业资讯行业资讯</a>
-			<span class="time1">2016-08-10 13:20:12</span></li>
-			 <li><a title="行业资讯行业资讯行业资讯" href="article.html">行业资讯行业资讯行业资讯</a>
-			<span class="time1">2016-08-10 13:20:12</span></li>
-			 <li><a title="行业资讯行业资讯行业资讯" href="article.html">行业资讯行业资讯行业资讯</a>
-			<span class="time1">2016-08-10 13:20:12</span></li>
+            <li><a title=<?php echo $row['name']; ?> href="article.html"><?php echo $StrDo->six($row['article']); ?></a>
+			<span class="time1"><?php echo $row['addTime']; ?></span></li>
+            <?php }
+;?>
+
 
         </ul>
     </div>
@@ -116,14 +84,18 @@
 	<div class="title">
         	<h2 class="cBlue fB">友情链接<b class="cGrey fn">Links</b></h2>
     </div>
+
+
+        <?php
+foreach ($pdo->query('SELECT * from links') as $row) {
+    ?>
     <p class="links">
-	    	<a href="www.baidu.com">百度</a> | <a href="www.yaochufa.com">要出发</a> | <a href="www.jd.com">京东</a>
+        <a href=<?php echo $row['link']; ?>><?php echo $row['name']; ?></a>
     </p>
+        <?php }
+;?>
+
 </div>
-<div class="footer">
-	<p>地址：广东省广州市广州大道北  联系人：乐可   移动电话：13619829982 固定电话：020-1234567 传 真：020-1234567</p>
-	<p>Copyright @ 2009 金陵贸易有限公司 版权所有</p>
-	<p><a href="#">粤ICP备08108790号</a></p>
-</div>
+<?php include "footer.html";?>
 </body>
 </html>
