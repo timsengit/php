@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" >
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>金陵贸易 后台管理系统</title>
@@ -6,11 +6,20 @@
 <link media="all" href="styles/style.css" type=text/css rel="stylesheet">
 </head>
 <body>
+<?php include "./session/Session.php";
+session_start();
+$session = new \Jinling\Session\Session();
+if ($session->showSession("name") != '') {
+    $name = $session->showSession("name");
+} else {
+    //exit(-1);
+}
+?>
 <div class="mainhd">
 <div class="logo">金陵贸易 后台管理系统</div>
 <div class="uinfo">
     <p>
-        您好, <EM>admin</EM> [ <a href="#" target="_top">退出</a> ]
+        您好, <EM><?php echo $name; ?></EM> [ <a href="logout.php" target="_top">退出</a> ]
     </p>
 </div>
 </div>

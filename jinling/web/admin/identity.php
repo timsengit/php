@@ -26,9 +26,14 @@ if ($row['id'] != '') {
         $session->setSession("pass", $password);
         echo "succ";
         header('Location:index.php');
+    } else {
+        header('Location:login.php');
     }
+} else {
+    header('Location:login.php');
 }
-;
+
 echo "key ' s value:" . $session->showSession("name"); //echo $username . $password;
 echo $_SESSION['name'];
-?>
+//
+;?>

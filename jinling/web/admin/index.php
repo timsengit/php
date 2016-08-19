@@ -16,7 +16,7 @@ $session = new \Jinling\Session\Session();
     <tbody>
         <tr>
             <td colspan="2" height="69">
-            	<iframe name="header" src="top.html" frameBorder="0" width="100%" scrolling="no" height="69"></iframe>
+            	<iframe name="header" src="top.php" frameBorder="0" width="100%" scrolling="no" height="69"></iframe>
             </td>
         </tr>
         <tr>
