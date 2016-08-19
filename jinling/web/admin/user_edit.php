@@ -6,9 +6,17 @@
 <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
 </head>
 <body>
+<?php include "./connecter/PDOX.php";
+include "./connecter/DBConfig.php";
+$pdo = new PDOX($DSN, $USER, $PASS);
+//echo "sss";
+$id = $_GET['id'];
+echo $id;
+?>
 <div class="container">
-    <h3 class="marginbot">编辑用户资料<a href="user_list.html" class="sgbtn">返回用户列表</a></h3>
+    <h3 class="marginbot">编辑用户资料<a href="user_list.php" class="sgbtn">返回用户列表</a></h3>
     <div class="mainbox">
+        <form action="editUser.php" method="post">
             <table class="opt">
                 <tbody>
                     <tr>
@@ -24,12 +32,14 @@
                     </tr>
                     <tr>
                         <td>
-                        <input name="password" value="" class="txt" type="password"> 
+                        <input name="password" value="" class="txt" type="password">
                         </td>
                     </tr>
+                    <input type="hidden" name="id" value=<?php echo $id; ?>>
                 </tbody>
             </table>
             <div class="opt"><input name="submit" value=" 提 交 " class="btn" tabindex="3" type="submit"></div>
+        </form>
     </div>
 </div>
 </body>

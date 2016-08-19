@@ -35,7 +35,7 @@ $res             = $pdo->query("select * from product WHERE id = $productId");
         <?php }
 ?>
     </div>
-<?php include "rightMessage.html";?>
+<?php include "rightMessage.php";?>
     <div class="hackbox"></div>
 
 

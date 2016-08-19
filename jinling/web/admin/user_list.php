@@ -60,7 +60,7 @@ $pdo = new PDOX($DSN, $USER, $PASS);
                         <td><?php echo $row['addTime']; ?></td>
                         <td><?php echo $row['registerIp']; ?></td>
                         <td>启用</td>
-                        <td><a href="user_edit.html">编辑</a></td>
+                        <td><a href=<?php echo "user_edit.php?id=" . $row['id']; ?> >编辑</a></td>
                     </tr>
                     <?php }
 ;?>
