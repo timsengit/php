@@ -27,7 +27,7 @@ if ($id == '') {
         ;?>
         	<li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo $row['pathOfPic']; ?> alt="图片1" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="图片1" /></a>
                 </span>
                 <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
             </li>
@@ -42,7 +42,7 @@ if ($id != '') {
         ?>
                     <li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo $row['pathOfPic']; ?> alt="图片1" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="图片1" /></a>
                 </span>
                         <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
                     </li>

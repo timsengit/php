@@ -7,4 +7,4 @@ $name = $_POST['username'];
 $pass = $_POST['password'];
 $arr  = array('name' => $name, 'pass' => $pass);
 $pdo->update('admin', $arr, "id=$id");
-header('Location:about_us.php');
+header('Location:user_list.php');

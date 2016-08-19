@@ -27,7 +27,7 @@ $res             = $pdo->query("select * from product WHERE id = $productId");
 <?php foreach ($res as $row) {;?>
         </div>
         <div class="product">
-			<img src=<?php echo $row['pathOfPic']; ?> alt= <?php echo $row['name']; ?>/>
+			<img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt= <?php echo $row['name']; ?>/>
             <p><strong>产品名称</strong>：<?php echo $row['name']; ?></p>
 			<p><strong>产品描述</strong>：</p>
             <?php echo $row['description']; ?>

@@ -2,14 +2,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>添加新产品</title>
+<title>编辑产品</title>
 <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
 </head>
 <body>
+<?php include "./connecter/PDOX.php";
+include "./connecter/DBConfig.php";
+$pdo = new PDOX($DSN, $USER, $PASS);
+$id  = $_GET['id'];
+foreach ($pdo->query("SELECT * from product WHERE id=$id") as $row);
+//echo $row['name'] . "sssssssssss" . $id;
+?>
 <div class="container">
-    <h3 class="marginbot">添加新产品<a href="product_list.php" class="sgbtn">返回产品列表</a></h3>
+    <h3 class="marginbot">编辑产品<a href="product_list.php" class="sgbtn">返回产品列表</a></h3>
     <div class="mainbox">
-        <form action="saveProduct.php" method="post" enctype="multipart/form-data">
+        <form action="changeProduct.php" method="post" enctype="multipart/form-data">
             <table class="opt" style="width:600px;">
                 <tbody>
                     <tr>
@@ -17,14 +24,15 @@
                     </tr>
                     <tr>
                         <td>
-                        <input name="name" class="txt" style="width:400px;" type="text">
+                        <input name="name" class="txt" style="width:400px;" type="text"value=<?php echo $row['name']; ?> >
                         </td>
                     </tr>
+                    <input name="id" type="hidden"value=<?php echo $id; ?>>
                     <tr>
                         <th>产品描述：</th>
                     </tr>
                     <tr>
-                        <td><textarea style="width:400px; height:150px" name="description"></textarea></td>
+                        <td><textarea style="width:400px; height:150px" name="description" ><?php echo $row['description']; ?></textarea></td>
                     </tr>
                 </tbody>
             </table>

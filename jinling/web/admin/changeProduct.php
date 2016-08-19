@@ -21,13 +21,14 @@ echo "upLoadsuccess...";
 
 session_start();
 $session     = new \Jinling\Session\Session();
+$id          = $_POST['id'];
 $name        = $_POST['name'];
-$pathOfPic   = 'images/' . $fileName[0];
+$pathOfPic   = './images/' . $fileName[0];
 $description = $_POST['description'];
 $adder       = $session->showSession("name");
 $addTime     = date('Ymd');
 echo $pathOfPic;
 $arr = array('name' => $name, 'pathOfPic' => $pathOfPic, 'description' => $description, 'adder' => $adder, 'addTime' => $addTime);
-$pdo->insert('product', $arr);
+$pdo->update('product', $arr, "id=$id");
 
 header('Location:product_list.php');

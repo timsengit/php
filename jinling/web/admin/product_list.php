@@ -34,7 +34,7 @@ $pdo = new PDOX($DSN, $USER, $PASS);
 						<td width="100"><img src=<?php echo $row['pathOfPic']; ?>></td>
                         <td width="100"><?php echo $row['adder']; ?></td>
                         <td width="150"><?php echo $row['addTime']; ?></td>
-                        <td width="100"><a href="">编辑</a></td>
+                        <td width="100"><a href=<?php echo "editProduct.php?id=" . $row['id']; ?> >编辑</a></td>
                     </tr>
                     <?php }
 ;?>

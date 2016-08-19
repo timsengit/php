@@ -30,14 +30,14 @@ foreach ($pdo->query('SELECT * from aboutus') as $row) {
         </div>
         <div class="blank10"></div>
         <div class="title">
-        	<h2 class="cBlue fB">产品展示<b class="cGrey fn">Products</b></h2><span class="more"><a href="product_list.html" class="cBlue"> 更多...</a></span>
+        	<h2 class="cBlue fB">产品展示<b class="cGrey fn">Products</b></h2><span class="more"><a href="product_list.php" class="cBlue"> 更多...</a></span>
         </div>
         <ul class="list_l">
 <?php foreach ($pdo->query('SELECT * from product') as $row) {
     ;?>
         	<li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo $row['pathOfPic']; ?> alt="222222" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="222222" /></a>
                 </span>
                 <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
             </li>
