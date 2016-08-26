@@ -9,9 +9,9 @@
 <body>
 <?php include "top.html";
 //导入顶部页面?>
-<?php include "../db/connecter/PDOX.php";
-include "../db/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+<?php include "../db/connecter/Pdox.php";
+include "../db/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 //echo "sss";
 ?>
 <div class="content">
@@ -30,16 +30,16 @@ foreach ($pdo->query('SELECT * from aboutus') as $row) {
         </div>
         <div class="blank10"></div>
         <div class="title">
-        	<h2 class="cBlue fB">产品展示<b class="cGrey fn">Products</b></h2><span class="more"><a href="product_list.php" class="cBlue"> 更多...</a></span>
+        	<h2 class="cBlue fB">产品展示<b class="cGrey fn">Products</b></h2><span class="more"><a href="productList.php" class="cBlue"> 更多...</a></span>
         </div>
         <ul class="list_l">
 <?php foreach ($pdo->query('SELECT * from product') as $row) {
     ;?>
         	<li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="222222" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "productInfo.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="222222" /></a>
                 </span>
-                <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
+                <span class="listtxt"><a href=<?php echo "productInfo.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
             </li>
             <?php }
 ;?>

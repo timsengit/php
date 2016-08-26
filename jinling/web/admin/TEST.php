@@ -5,9 +5,9 @@
  * Date: 2016/8/18
  * Time: 21:49
  */
-include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 
 echo "<pre>" . 11111111111;
 //echo "ss" . $count = $pdo->getcount('test');

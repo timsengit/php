@@ -1,10 +1,10 @@
 <?php
-include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo  = new PDOX($DSN, $USER, $PASS);
+include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo  = new Pdox($DSN, $USER, $PASS);
 $id   = $_POST['id'];
 $name = $_POST['username'];
 $pass = $_POST['password'];
 $arr  = array('name' => $name, 'pass' => $pass);
 $pdo->update('admin', $arr, "id=$id");
-header('Location:user_list.php');
+header('Location:userList.php');

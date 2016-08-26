@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <h3 class="marginbot">添加新产品<a href="product_list.php" class="sgbtn">返回产品列表</a></h3>
+    <h3 class="marginbot">添加新产品<a href="productList.php" class="sgbtn">返回产品列表</a></h3>
     <div class="mainbox">
         <form action="saveProduct.php" method="post" enctype="multipart/form-data">
             <table class="opt" style="width:600px;">

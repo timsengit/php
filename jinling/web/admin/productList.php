@@ -8,12 +8,12 @@
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
-<?php include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+<?php include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 ?>
 <div class="container">
-    <h3 class="marginbot">最新公告<a href="product_edit.php" class="sgbtn">添加新产品</a></h3>
+    <h3 class="marginbot">最新公告<a href="newsList.php" class="sgbtn">添加新产品</a></h3>
     <div class="mainbox">
         <form action="deleteProduct.php" method="post">
             <table class="datalist fixwidth">

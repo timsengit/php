@@ -8,9 +8,9 @@
 
 <body>
 <?php include "top.html";?>
-<?php include "../db/connecter/PDOX.php";
-include "../db/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+<?php include "../db/connecter/Pdox.php";
+include "../db/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 //echo "sss";
 $id = $_GET['id'];
 ?>
@@ -27,9 +27,9 @@ if ($id == '') {
         ;?>
         	<li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="图片1" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "productInfo.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="图片1" /></a>
                 </span>
-                <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
+                <span class="listtxt"><a href=<?php echo "productInfo.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
             </li>
             <?php }
 }
@@ -42,9 +42,9 @@ if ($id != '') {
         ?>
                     <li>
                 <span class="listimg">
-                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="图片1" /></a>
+                    <img src="images/tran.gif" class="blank" /><a href=<?php echo "productInfo.php?productId=" . $row['id']; ?>><img src=<?php echo "admin/" . $row['pathOfPic']; ?> alt="图片1" /></a>
                 </span>
-                        <span class="listtxt"><a href=<?php echo "product_info.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
+                        <span class="listtxt"><a href=<?php echo "productInfo.php?productId=" . $row['id']; ?>><?php echo $row['name']; ?></a></span>
                     </li>
                 <?php }
 }

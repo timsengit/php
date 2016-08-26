@@ -9,9 +9,9 @@
 </head>
 <body>
 <?php
-include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 ?>
 <div class="container">
 	<h3>统计信息</h3>

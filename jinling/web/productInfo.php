@@ -12,9 +12,9 @@
     <p class="top_r"><a href="#" class="btn_i">设为主页</a><a href="#" class="btn_f">收藏本站</a></p>
 </div>
 <?php include "top.html";?>
-<?php include "../db/connecter/PDOX.php";
+<?php include "../db/connecter/Pdox.php";
 $dsn = "mysql:host=localhost;dbname=jinlingdb";
-$pdo = new PDOX($dsn, 'jinling', 'JLining');
+$pdo = new Pdox($dsn, 'jinling', 'JLining');
 //echo "sss";
 ?>
 <?php $productId = $_GET['productId'];

@@ -6,15 +6,15 @@
 <link rel="stylesheet" href="styles/style.css" type="text/css" media="all">
 </head>
 <body>
-<?php include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+<?php include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 $id  = $_GET['id'];
 foreach ($pdo->query("SELECT * from product WHERE id=$id") as $row);
 //echo $row['name'] . "sssssssssss" . $id;
 ?>
 <div class="container">
-    <h3 class="marginbot">编辑产品<a href="product_list.php" class="sgbtn">返回产品列表</a></h3>
+    <h3 class="marginbot">编辑产品<a href="productList.php" class="sgbtn">返回产品列表</a></h3>
     <div class="mainbox">
         <form action="changeProduct.php" method="post" enctype="multipart/form-data">
             <table class="opt" style="width:600px;">

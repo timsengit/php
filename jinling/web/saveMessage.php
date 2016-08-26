@@ -6,9 +6,9 @@
  * Time: 0:03
  */
 
-include "../db/connecter/PDOX.php";
+include "../db/connecter/Pdox.php";
 $dsn     = "mysql:host=localhost;dbname=jinlingdb";
-$pdo     = new PDOX($dsn, 'jinling', 'JLining');
+$pdo     = new Pdox($dsn, 'jinling', 'JLining');
 $name    = $_POST["username"]; //提交昵称
 $content = $_POST["content"]; //消息主体
 $addTime = date('Ymd');

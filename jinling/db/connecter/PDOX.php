@@ -6,7 +6,7 @@
  */
 //namespace Jinling\DBXX;
 
-class PDOX
+class Pdox
 {
     private $pdo = null;
 

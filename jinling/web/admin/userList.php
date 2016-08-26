@@ -8,9 +8,9 @@
 <script type="text/javascript" src="js/common.js"></script>
 </head>
 <body>
-<?php include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+<?php include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 ?>
 <div class="container">
     <div class="hastabmenu">
@@ -60,7 +60,7 @@ $pdo = new PDOX($DSN, $USER, $PASS);
                         <td><?php echo $row['addTime']; ?></td>
                         <td><?php echo $row['registerIp']; ?></td>
                         <td>启用</td>
-                        <td><a href=<?php echo "user_edit.php?id=" . $row['id']; ?> >编辑</a></td>
+                        <td><a href=<?php echo "userEdit.php?id=" . $row['id']; ?> >编辑</a></td>
                     </tr>
                     <?php }
 ;?>

@@ -4,7 +4,7 @@
         <ul class="list_r">
             <?php foreach ($pdo->query('SELECT * from productKind') as $row) {
     ;?>
-            <li><a href=<?php echo "product_list.php?id=" . $row['id']; ?>><?php echo $row['kindName']; ?></a></li>
+            <li><a href=<?php echo "productList.php?id=" . $row['id']; ?>><?php echo $row['kindName']; ?></a></li>
             <?php }
 ;?>
         </ul>

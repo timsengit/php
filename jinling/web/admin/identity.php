@@ -8,9 +8,9 @@
  * Time: 16:28
  */
 include "./session/Session.php";
-include "./connecter/PDOX.php";
-include "./connecter/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+include "./connecter/Pdox.php";
+include "./connecter/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 session_start();
 $session = new \Jinling\Session\Session();
 //session_start();

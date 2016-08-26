@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="container">
-    <h3 class="marginbot">添加新文章<a href="news_list.php" class="sgbtn">返回文章列表</a></h3>
+    <h3 class="marginbot">添加新文章<a href="newsList.php" class="sgbtn">返回文章列表</a></h3>
     <div class="mainbox">
         <form action="saveNews.php" method="post">
             <table class="opt" style="width:600px;">

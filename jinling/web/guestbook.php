@@ -8,9 +8,9 @@
 
 <body>
 <?php include "top.html";?>
-<?php include "../db/connecter/PDOX.php";
-include "../db/DBConfig.php";
-$pdo = new PDOX($DSN, $USER, $PASS);
+<?php include "../db/connecter/Pdox.php";
+include "../db/DbConfig.php";
+$pdo = new Pdox($DSN, $USER, $PASS);
 //echo "sss";
 ?>
 <div class="content">

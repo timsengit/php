@@ -23,12 +23,12 @@ a:hover { text-decoration:underline; }
 <body>
 <div class="menu">
     <ul id="leftmenu">
-      <li><a class="tabon" href="sys_info.php" target="main">首页</a> </li>
-      <li><a href="about_us.php" target="main">公司简介</a> </li>
-      <li><a href="news_list.php" target="main">最新公告</a> </li>
-      <li><a href="product_list.php" target="main">产品管理</a> </li>
-      <li><a href="contact_us.php" target="main">联系我们</a> </li>
-      <li><a href="user_list.php" target="main">管理员</a> </li>
+      <li><a class="tabon" href="sysInfo.php" target="main">首页</a> </li>
+      <li><a href="aboutUs.php" target="main">公司简介</a> </li>
+      <li><a href="newsList.php" target="main">最新公告</a> </li>
+      <li><a href="productList.php" target="main">产品管理</a> </li>
+      <li><a href="contactUs.php" target="main">联系我们</a> </li>
+      <li><a href="userList.php" target="main">管理员</a> </li>
     </ul>
 </div>
 <div class="footer">Powered by JinLing<BR>© 2009 <a href="#" target="_blank">金陵贸易</a> Inc.
