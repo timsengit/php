@@ -18,7 +18,7 @@ class UpLoader
                 $temp = $tempName[$i];
                 $size = $fileSize[$i];
 //设置保存的目录文件夹
-                $name = './uploads/' . $fileName[$i];
+                $name = $fileName[$i];
                 $this->singleUpload($temp, $name, $size);
             }
         }

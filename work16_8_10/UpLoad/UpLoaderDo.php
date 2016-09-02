@@ -12,4 +12,5 @@ $fileName = $_FILES["$file"]['name'];
 $tempName = $_FILES["$file"]['tmp_name'];
 $fileSize = $_FILES["$file"]['size'];
 $uploader->file($fileName, $tempName, $fileSize);
+var_dump($_FILES);
 echo "upLoadsuccess...";
