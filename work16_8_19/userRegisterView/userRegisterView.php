@@ -6,7 +6,7 @@
 
 <body>
 <h1>用户注册界面</h1>
-<form action="register.php" method="post" enctype="multipart/form-data">
+<form action="register.php" method="post" enctype="multipart/form-data" onsubmit="return check(this)">
 <table width="297" border="0" bordercolor="#F0F0F0">
   <tr>
     <td width="74" nowrap="nowrap"><div align="right">用户名：</div></td>
@@ -27,9 +27,9 @@
   </tr>
   <tr>
     <td height="23" nowrap="nowrap"><div align="right">爱好：</div></td>
-    <td nowrap="nowrap"><input name="hobby" type="checkbox" value="music" />听音乐
-	<input name="hobby" type="checkbox" value="movie" />看电影
-	<input name="hobby" type="checkbox" value="game" />
+    <td nowrap="nowrap"><input name="hobby[]" type="checkbox" value="music" />听音乐
+	<input name="hobby[]" type="checkbox" value="movie" />看电影
+	<input name="hobby[]" type="checkbox" value="game" />
 	玩游戏</td>
   </tr>
   <tr>
@@ -54,5 +54,46 @@
   </tr>
 </table>
 </form>
+<script type="text/javascript">
+    function check(form) {
+        //判断账号不为空
+        if(form.username.value==""){
+            alert("请输入账号");
+            form.username.focus();
+            return false;
+        }
+        //判断密码不为空
+        if(form.pass.value==""){
+            alert("请输入密码");
+            form.pass.focus();
+            return false;
+        }
+        //判断两次密码要一致
+        if(form.pass.value!=form.passconfirm.value){
+            alert("两次密码不一致");
+            form.passconfirm.focus();
+            return false;
+        }
+        //判断下拉框不为空
+        if(form.city.value==""){
+            alert("请选择城市");
+            form.city.focus();
+            return false;
+        }
+        //判断图片不为空
+        if(form.file.value==""){
+            alert("请选择图片");
+            form.file.focus();
+            return false;
+        }
+        //判断文本不为空
+        if(form.info.value==""){
+            alert("请输入个人简介");
+            form.info.focus();
+            return false;
+        }
+        return true;
+    }
+</script>
 </body>
 </html>

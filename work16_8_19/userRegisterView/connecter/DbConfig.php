@@ -1,5 +1,5 @@
 <?php
-$DBNAME = jinlingdb;
-$DSN    = "mysql:host=localhost;dbname=jinlingdb";
-$USER   = 'jinling';
-$PASS   = 'JLining';
+$DBNAME = 'ycfdb';
+$DSN    = "mysql:host=localhost;dbname=ycfdb";
+$USER   = 'ycf';
+$PASS   = 'b50unl';
