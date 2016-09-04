@@ -1,10 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-
+<link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+<div class="resiter">
 <h1>用户注册界面</h1>
 <form action="register.php" method="post" enctype="multipart/form-data" onsubmit="return check(this)">
 <table width="297" border="0" bordercolor="#F0F0F0">
@@ -95,5 +96,6 @@
         return true;
     }
 </script>
+</div>
 </body>
 </html>

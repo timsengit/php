@@ -1,0 +1,15 @@
+*{margin: 0px;
+    padding: 0px;}
+
+.resiter{
+    height: 80px;
+    width: 650px;
+    margin: auto;
+    margin-top: 50px;
+    margin-left:50px;
+
+}
+tr>td:first-child {
+    color:darkblue;
+    margin:120px;
+}
