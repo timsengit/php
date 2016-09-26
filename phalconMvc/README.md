@@ -1,19 +1,17 @@
 #一个基于phalcon的mvc骨架
 
-##特点
+##特点3 微型权限管理系统
+  1. 设计两张表，用户表/用户组表
+  2. 用户表：用户id，姓名，性别，qq，电话，添加实践，所属用户组
+  3. 用户组：用户组id，用户组名称，用户组权限
+要求：
+  1. 用户管理，增删改查
+  2. 用户组管理，增删改查，权限管理
+  3. phalcon框架/medoo数据查询，变量、控制器需命名规范，有意义
+  4. 权限字段内容：控制器的标示
+  5. 每个action里面可以需要有权限判断，也可以在控制器init方法里面自动判断
 
-* 依赖phalcon扩展，性能强劲
-* mvc+s，增加service层，不用在controller里面写逻辑代码，让controller保持清爽
-* 受Yii框架的影响，生成的文件都放在runtime里面，保证该目录可写
-* cli应用使用：cd app，php run；tasks目录下文件为cli应用逻辑
-* 没有用多模块，而是用多层级controller，适合中小型应用
 
-
-## 安装
-* phalcon扩展，安装步骤：https://github.com/phalcon/cphalcon
-* git clone https://github.com/kcloze/phalconMvc.git
-* 导入数据表 database.sql
-* public为网站根目录，配置nginx或者apache
 
 ![首页][1]
 
